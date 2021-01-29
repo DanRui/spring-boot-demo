@@ -17,6 +17,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 @Slf4j
 public class SpringBootDemoLogbackApplication {
 
+    // 日志级别TRACE < DEBUG < INFO < WARN < ERROR < FATAL
+    // 低级别的都不会
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(SpringBootDemoLogbackApplication.class, args);
         int length = context.getBeanDefinitionNames().length;
